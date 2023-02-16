@@ -1,5 +1,4 @@
 import React from 'react';
-import {routes} from "../../routes";
 import {useNavigate} from "react-router-dom";
 
 const Post = ({post}) => {
@@ -18,7 +17,7 @@ const Post = ({post}) => {
                 <p><b>Id:</b> {id}</p>
                 <p><b>Body:</b> {body}</p>
             </div>
-            <button className='btn' onClick={() => navigate(`/${routes.comments}`)}>Back</button>
+            <button className='btn' onClick={() => navigate(-1)}>Back</button>
         </div>
     );
 };
