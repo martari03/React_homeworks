@@ -1,2 +1,2 @@
-export * from './baseURLService'
-export * from './configsService'
+export * from './postAxiosService'
+export * from './postService'

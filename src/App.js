@@ -1,5 +1,5 @@
 import './App.css';
-import {Posts} from "../../hw/src/components";
+import {Posts} from "./components";
 
 const App = () => {
     return (

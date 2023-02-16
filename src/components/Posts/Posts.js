@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {postService} from "../../../../Homeworks_react/src/services";
+import {postService} from "../../services";
 import {Details} from "../Details/Details";
 import {Post} from "../Post/Post";
 import './Posts.css'
