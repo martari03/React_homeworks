@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    background: #75e8bf;
+}
+
+.header a {
+    display: flex;
+    text-decoration: none;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
+    font-size: 15px;
+}
+
+.header a[class='active'] {
+    color: darkslategray;
+    background: #52cba5;
+    height: 85%;
+}
