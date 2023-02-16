@@ -1,6 +1,5 @@
 import './App.css';
-import {Simpsons} from "../../hw/src/components/Simpsons/Simpsons";
-import {RickMortys} from "../../hw/src/components/RickMortys/RickMortys";
+import {RickMortys, Simpsons} from "./components";
 
 const App = () => {
     return (
@@ -10,4 +9,4 @@ const App = () => {
         </div>
     );
 };
-export default App;
+export {App};
