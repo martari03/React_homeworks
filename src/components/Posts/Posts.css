@@ -1,0 +1,26 @@
+.postsDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.postsDiv h3 {
+    color: #c13238;
+}
+
+.divider {
+    height: 0;
+    width: 99%;
+    border: 1px solid #b9badb;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 1vh;
+    margin-bottom: 1vh;
+}

@@ -3,9 +3,13 @@
   padding: 0;
 }
 
-.members {
+.wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  row-gap: 1vh;
   align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: #0d0f37;
+  color: #b9badb;
 }

@@ -1,0 +1,14 @@
+.post {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1vh;
+    background: #252160;
+    border-radius: 15px;
+    width: 49vw;
+    height: 25vh;
+    padding: 1vh;
+    font-size: 12px;
+}

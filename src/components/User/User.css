@@ -1,0 +1,29 @@
+.user {
+    background: #252160;
+    box-sizing: border-box;
+    padding: 1vh;
+    border-radius: 15px;
+    width: 19vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    font-size: 12px;
+}
+
+.user h3 {
+    color: #c13238;
+}
+
+.userInfo {
+    height: 95%;
+}
+
+.btn {
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #c13238;
+    background: #c13238;
+    color: #b9badb;
+    width: 90%;
+}

@@ -1,10 +1,12 @@
 import './App.css';
+import {Users} from "../../hw/src/components";
 
 const App = () => {
-  return (
-      <div className="App">
+    return (
+        <div>
+            <Users/>
+        </div>
+    );
+}
 
-      </div>
-  );
-};
 export default App;
