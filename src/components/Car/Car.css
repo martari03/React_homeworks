@@ -1,0 +1,24 @@
+.car {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    height: 35vh;
+    width: 20vw;
+    background: lightskyblue;
+    box-shadow: deepskyblue 3px 3px;
+}
+
+.btn {
+    box-sizing: border-box;
+    align-self: center;
+    background: deepskyblue;
+    color: #3c3e44;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
