@@ -1,5 +1,4 @@
 export * from './CarsPage/CarsPage';
-export * from './HomePage/HomePage';
+export * from './LoginPage/LoginPage';
 export * from './NotFoundPage/NotFoundPage';
-export * from './PostsPage/PostsPage';
-export * from './UsersPage/UsersPage';
+export * from './RegisterPage/RegisterPage';

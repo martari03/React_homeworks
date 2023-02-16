@@ -1,2 +1,1 @@
-export * from './owuURLS';
-export * from './placeholderURLS';
+export * from './urls';
