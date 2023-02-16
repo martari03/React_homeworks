@@ -1,0 +1,13 @@
+.launch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    row-gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    background: #423bab;
+    border-radius: 15px;
+    padding: 1vh;
+    width: 30vw;
+    height: 55vh;
+}

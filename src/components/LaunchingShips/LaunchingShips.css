@@ -1,0 +1,12 @@
+.wrapper {
+    background: #0d0f37;
+    color: #b9badb;
+}
+
+.launches {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+}
