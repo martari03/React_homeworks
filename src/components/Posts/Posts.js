@@ -1,34 +1,22 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 
-import {postService} from "../../services";
-import {Details} from "../Details/Details";
 import {Post} from "../Post/Post";
-import './Posts.css'
+import {postActions} from "../../redux";
 
 const Posts = () => {
-    const detailsDiv = 'detailsDiv';
-    const postsDiv = 'postsDiv';
-    const [posts, setPosts] = useState([]);
-    const [postDetails, setPostDetails] = useState(null);
+    const {posts, errors, loading} = useSelector(state => state.posts);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        postService.getAll().then(value => value.data).then(value => setPosts([...value]))
-    }, []);
+        dispatch(postActions.getAllPosts())
+    }, [dispatch]);
 
     return (
-        <div className='wrapper'>
-            <div className={detailsDiv}>
-                {!!postDetails && <Details post={postDetails}/>}
-            </div>
-
-            <div className={postsDiv}>
-                <h2>All posts:</h2>
-                <div className='posts'>
-                    {
-                        posts.map(post => <Post key={post.id} post={post} setPostDetails={setPostDetails}/>)
-                    }
-                </div>
-            </div>
+        <div className='posts'>
+            {errors && JSON.stringify(errors)}
+            {loading && <h3>The page is loading</h3>}
+            {posts.map(post => <Post key={post.id} post={post}/>)}
         </div>
     );
 };

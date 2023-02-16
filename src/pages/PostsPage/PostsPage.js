@@ -5,7 +5,7 @@ import {ChosenPost, Posts} from "../../components";
 import './PostsPage.css';
 
 const PostsPage = () => {
-    const {selectedPost} = useSelector(state => state.postReducer);
+    const {selectedPost} = useSelector(state => state.posts);
 
     return (
         <div>

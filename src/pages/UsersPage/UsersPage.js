@@ -5,7 +5,7 @@ import {ChosenUser, Users} from "../../components";
 import './UsersPage.css';
 
 const UsersPage = () => {
-    const {selectedUser} = useSelector(state => state.userReducer);
+    const {selectedUser} = useSelector(state => state.users);
 
     return (
         <div>
