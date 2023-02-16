@@ -1,0 +1,21 @@
+.btn {
+    box-sizing: border-box;
+    background: #6e9f10;
+    color: azure;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.input {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    justify-content: center;
+    width: 90vw;
+}
+
+.input input {
+    width: 90%;
+}

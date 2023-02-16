@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.page {
+    box-sizing: border-box;
+    position: absolute;
+    left: 22vw;
+    width: 76.35vw;
+    padding: 1vh;
+    height: 100%;
+}

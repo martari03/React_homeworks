@@ -1,0 +1,29 @@
+.post {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    height: 50vh;
+    width: 24vw;
+    background: #35a753;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+.postBody {
+    height: 90%;
+}
+
+.pbtn {
+    box-sizing: border-box;
+    background: #228e3f;
+    color: azure;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
