@@ -1,0 +1,44 @@
+form {
+    display: flex;
+    margin: 1vh;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 95vw;
+    justify-content: center;
+}
+
+.car {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    height: 35vh;
+    width: 20vw;
+    border-radius: 15px;
+    background: azure;
+    padding: 1vh;
+}
+
+.btn {
+    background: aquamarine;
+    box-sizing: border-box;
+    align-self: center;
+    color: #3c3e44;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.cars {
+    display: flex;
+    column-gap: 1vw;
+    row-gap: 1vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}

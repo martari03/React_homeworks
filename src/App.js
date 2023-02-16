@@ -1,10 +1,12 @@
 import './App.css';
+import {Posts} from "./components";
 
 const App = () => {
-  return (
-      <div className="App">
+    return (
+        <div>
+            <Posts/>
+        </div>
+    );
+}
 
-      </div>
-  );
-};
-export default App;
+export {App};
