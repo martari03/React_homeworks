@@ -4,6 +4,8 @@ import {carService} from "../../services";
 
 const initialState = {
     cars: [],
+    prev: null,
+    next: null,
     errors: null,
     loading: null,
     carToUpdate: null
@@ -11,9 +13,9 @@ const initialState = {
 
 const getAllCars = createAsyncThunk(
     'carSlice/getAllCars',
-    async (_, thunkAPI) => {
+    async ({page}, thunkAPI) => {
         try {
-            const {data} = await carService.getAllCars();
+            const {data} = await carService.getAllCars(page);
             return data;
         } catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
@@ -26,7 +28,7 @@ const createCar = createAsyncThunk(
     async ({car}, thunkAPI) => {
         try {
             await carService.createCar(car);
-            thunkAPI.dispatch(getAllCars());
+            thunkAPI.dispatch(getAllCars({page: 1}));
         } catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
         }
@@ -38,7 +40,7 @@ const updateSelectedCar = createAsyncThunk(
     async ({id, value}, thunkAPI) => {
         try {
             await carService.updateSelectedCar(id, value);
-            thunkAPI.dispatch(getAllCars());
+            thunkAPI.dispatch(getAllCars({page: 1}));
         } catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
         }
@@ -50,7 +52,7 @@ const deleteSelectedCar = createAsyncThunk(
     async ({id}, thunkAPI) => {
         try {
             await carService.deleteSelectedCar(id);
-            thunkAPI.dispatch(getAllCars());
+            thunkAPI.dispatch(getAllCars({page: 1}));
         } catch (e) {
             return thunkAPI.rejectWithValue(e.response.data);
         }
@@ -69,7 +71,10 @@ const carSlice = createSlice({
             builder
                 .addCase(getAllCars.fulfilled, (state, action) => {
                     state.loading = false;
-                    state.cars = action.payload;
+                    const {prev, next, items} = action.payload;
+                    state.cars = items
+                    state.prev = prev
+                    state.next = next
                 })
                 .addDefaultCase((state, action) => {
                     const [status] = action.type.split('/').slice(-1);

@@ -1,6 +1,7 @@
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    column-gap: 5vw;
     align-items: center;
     height: 10vh;
     width: 100%;
