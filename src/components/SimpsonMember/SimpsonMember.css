@@ -1,0 +1,23 @@
+.Simpsons {
+    background: #fec356;
+    height: 450px;
+}
+
+.simpson {
+    background: #ffc500;
+    box-sizing: border-box;
+    border-radius: 10%;
+    width: 250px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    font-size: 10px;
+}
+
+img {
+    width: 200px;
+    max-height: 300px;
+}
