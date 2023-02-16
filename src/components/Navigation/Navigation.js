@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import {useAuthContext} from "../../hooks";
+import './Navigation.css';
 
 const Navigation = () => {
     const {user, logOut} = useAuthContext();
