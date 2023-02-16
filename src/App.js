@@ -1,18 +1,20 @@
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 
 import './App.css';
-import {MainLayout} from "./layouts";
-import {CarsPage, HomePage, NotFoundPage, PostsPage, UsersPage} from "./pages";
+import {AuthLayout, MainLayout} from "./layouts";
+import {CarsPage, LoginPage, NotFoundPage, RegisterPage} from "./pages";
 
 const App = () => {
     return (
         <div className="App">
             <Routes>
                 <Route path={'/'} element={<MainLayout/>}>
-                    <Route index element={<HomePage/>}/>
-                    <Route path={'/users'} element={<UsersPage/>}/>
-                    <Route path={'/posts'} element={<PostsPage/>}/>
-                    <Route path={'/cars'} element={<CarsPage/>}/>
+                    <Route index element={<Navigate to={'cars'}/>}/>
+                    <Route element={<AuthLayout/>}>
+                        <Route path={'/cars'} element={<CarsPage/>}/>
+                    </Route>
+                    <Route path={'login'} element={<LoginPage/>}/>
+                    <Route path={'register'} element={<RegisterPage/>}/>
                     <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
@@ -20,4 +22,4 @@ const App = () => {
     );
 }
 
-export default App;
+export {App};
