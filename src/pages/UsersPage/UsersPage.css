@@ -1,0 +1,51 @@
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vh;
+    column-gap: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.wrapper {
+    display: flex;
+    row-gap: 1vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form form {
+    display: flex;
+    margin: 1vh;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 95vw;
+    justify-content: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    align-self: center;
+    background: #76e8c0;
+    color: #3c3e44;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.user {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    height: 35vh;
+    width: 20vw;
+    background: azure;
+}

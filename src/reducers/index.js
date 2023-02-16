@@ -1,3 +1,3 @@
 export * from './carReducer';
-export * from './cat&dogReducer';
+export * from './animalsReducer';
 export * from './userReducer';

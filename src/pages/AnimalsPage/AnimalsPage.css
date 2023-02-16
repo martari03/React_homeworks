@@ -1,0 +1,42 @@
+.animals {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    row-gap: 1vh;
+    column-gap: 1vw;
+}
+
+.input {
+    height: 10vh;
+}
+
+.input input {
+    width: 90%;
+}
+
+.cats, .dogs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    column-gap: 1vw;
+}
+
+.cat, .dog {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    background: azure;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    align-self: center;
+    background: #76e8c0;
+    color: #3c3e44;
+    width: 980%;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {UserForm, Users} from "../../components";
+import './UsersPage.css';
 
 const UsersPage = () => {
+    const [userForUpdate, setUserForUpdate] = useState(null);
+
     return (
-        <div>
-            <UserForm/>
+        <div className='wrapper'>
+            <UserForm userForUpdate={userForUpdate} setUserForUpdate={setUserForUpdate}/>
             <hr/>
-            <Users/>
+            <Users setUserForUpdate={setUserForUpdate}/>
         </div>
     );
 };

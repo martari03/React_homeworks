@@ -1,5 +1,5 @@
+export * from './AnimalsPage/AnimalsPage';
 export * from './CarsPage/CarsPage';
-export * from './CatsAndDogsPage/CatsAndDogsPage';
 export * from './CommentsPage/CommentsPage';
 export * from './HomePage/HomePage';
 export * from './NotFoundPage/NotFoundPage';

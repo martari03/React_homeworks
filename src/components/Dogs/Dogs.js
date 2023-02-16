@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Dogs = () => {
-    return (
-        <div>
+import {Dog} from "../Dog/Dog";
 
+const Dogs = ({dogs, dispatch}) => {
+
+    return (
+        <div className='dogs'>
+            {dogs.map(dog => <Dog key={dog.id} dog={dog} dispatch={dispatch}/>)}
         </div>
     );
 };

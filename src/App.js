@@ -2,7 +2,7 @@ import {Route, Routes} from "react-router-dom";
 
 import './App.css';
 import {MainLayout} from "./layouts";
-import {CarsPage, CatsAndDogsPage, CommentsPage, HomePage, NotFoundPage, PostsPage, UsersPage} from "./pages";
+import {AnimalsPage, CarsPage, CommentsPage, HomePage, NotFoundPage, PostsPage, UsersPage} from "./pages";
 
 const App = () => {
     return (
@@ -10,8 +10,8 @@ const App = () => {
             <Routes>
                 <Route path={'/'} element={<MainLayout/>}>
                     <Route index element={<HomePage/>}/>
+                    <Route path={'/animals'} element={<AnimalsPage/>}/>
                     <Route path={'/cars'} element={<CarsPage/>}/>
-                    <Route path={'/catsAndDogs'} element={<CatsAndDogsPage/>}/>
                     <Route path={'/comments'} element={<CommentsPage/>}/>
                     <Route path={'/posts'} element={<PostsPage/>}/>
                     <Route path={'/users'} element={<UsersPage/>}/>
@@ -20,6 +20,6 @@ const App = () => {
             </Routes>
         </div>
     );
-}
+};
 
 export default App;

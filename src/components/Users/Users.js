@@ -1,9 +1,12 @@
-import React from 'react';
+import {useMyAppReducer} from "../../hooks";
+import {User} from "../User/User";
 
-const Users = () => {
+const Users = ({setUserForUpdate}) => {
+    const [users] = useMyAppReducer((reducers) => reducers.userReducer);
+
     return (
-        <div>
-
+        <div className='users'>
+            {users.map(user => <User key={user.id} user={user} setUserForUpdate={setUserForUpdate}/>)}
         </div>
     );
 };

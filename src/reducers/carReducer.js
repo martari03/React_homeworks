@@ -1,11 +1,15 @@
 const carActionTypes = {
     ADD: 'ADD',
-    DELETE_BY_ID: 'DELETE_BY_ID'
+    DELETE_BY_ID: 'DELETE_BY_ID',
+    UPDATE_BY_ID: 'UPDATE_BY_ID',
+    CAR_FOR_UPDATE: 'CAR_FOR_UPDATE'
 }
 
 const carActions = {
     ADD: (item) => ({type: carActionTypes.ADD, payload: item}),
-    DELETE_BY_ID: (id) => ({type: carActionTypes.DELETE_BY_ID, payload: id})
+    DELETE_BY_ID: (id) => ({type: carActionTypes.DELETE_BY_ID, payload: id}),
+    UPDATE_BY_ID: (id, car) => ({type: carActionTypes.UPDATE_BY_ID, payload: {id, car}}),
+    CAR_FOR_UPDATE: (item) => ({type: carActionTypes.CAR_FOR_UPDATE, payload: item})
 };
 
 const initialCars = () => [];
@@ -20,6 +24,11 @@ const myCarReducer = (state, action) => {
         case carActionTypes.DELETE_BY_ID:
             const index = state.findIndex(value => value.id === action.payload);
             state.splice(index, 1);
+            return [...state];
+
+        case carActionTypes.UPDATE_BY_ID:
+            const indexForUpdate = state.findIndex(value => value.id === action.payload.id);
+            state[indexForUpdate] = {id: action.payload.id, ...action.payload.car};
             return [...state];
 
         default:

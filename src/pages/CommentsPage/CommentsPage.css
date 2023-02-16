@@ -1,0 +1,25 @@
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vh;
+    column-gap: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.comment {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    row-gap: 1vh;
+    height: 45vh;
+    width: 20vw;
+    background: azure;
+}
