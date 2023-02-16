@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
 
-import {carValidator} from "../../../../Homeworks_react/src/validators";
+import {carValidator} from "../../validators";
 import {carService} from "../../services";
 import './CarForm.css';
 
