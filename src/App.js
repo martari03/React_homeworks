@@ -1,10 +1,12 @@
 import './App.css';
+import {Comments} from "./components";
 
 const App = () => {
-  return (
-      <div className="App">
+    return (
+        <div className="App">
+            <Comments/>
+        </div>
+    );
+}
 
-      </div>
-  );
-};
 export default App;

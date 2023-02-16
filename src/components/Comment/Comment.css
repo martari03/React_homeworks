@@ -1,0 +1,15 @@
+.comment {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    row-gap: 1vh;
+    height: 45vh;
+    width: 20vw;
+    background: lightskyblue;
+    box-shadow: deepskyblue 3px 3px;
+}
