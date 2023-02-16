@@ -1,0 +1,22 @@
+.form form {
+    display: flex;
+    margin: 1vh;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 95vw;
+    justify-content: center;
+}
+
+.form h4, h5 {
+    align-self: center;
+}
+
+.btn {
+    box-sizing: border-box;
+    align-self: center;
+    background: deepskyblue;
+    color: #3c3e44;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
