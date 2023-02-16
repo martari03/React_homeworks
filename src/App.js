@@ -1,5 +1,5 @@
 import './App.css';
-import {Users} from "../../hw/src/components";
+import {Users} from "./components";
 
 const App = () => {
     return (

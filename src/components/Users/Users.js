@@ -4,7 +4,7 @@
 
 import React, {useEffect, useState} from 'react';
 
-import {configsService} from "../../../../Homeworks_react/src/services";
+import {configsService} from "../../services";
 import {User} from "../User/User";
 import {Posts} from "../Posts/Posts";
 import './Users.css'
