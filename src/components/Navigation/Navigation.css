@@ -1,0 +1,25 @@
+.navigation {
+    height: 100vh;
+    width: 22vw;
+    position: fixed;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    background: #a2ce4f;
+}
+
+.navigation a {
+    padding: 1vw;
+    text-decoration: none;
+    color: #3c3e44;
+    width: 80%;
+}
+
+.navigation a.active {
+    color: azure;
+    background: #6e9f10;
+    border-radius: 5px;
+    box-shadow: #8cb548 3px 3px;
+}

@@ -1,0 +1,50 @@
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1vh;
+    column-gap: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.comment {
+    box-sizing: border-box;
+    display: flex;
+    color: #3c3e44;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    height: 60vh;
+    width: 24vw;
+    background: #a2ce4f;
+    box-shadow: #6e9f10 3px 3px;
+}
+
+.commentBody {
+    height: 90%;
+}
+
+.btn {
+    box-sizing: border-box;
+    background: #6e9f10;
+    color: azure;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.divider {
+    width: 99.8%;
+    border: 1px solid #6e9f10;
+    height: 0;
+}
+
+.postWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
