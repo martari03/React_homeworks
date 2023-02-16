@@ -4,8 +4,9 @@ import {BrowserRouter} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
-import App from './App';
 import {MyProvider} from "./hoc";
+import {App} from "./App";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
