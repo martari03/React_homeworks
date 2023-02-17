@@ -1,46 +1,23 @@
 {
-  "name": "hw",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0",
-    "axios": "^1.3.3",
-    "react-hook-form": "^7.43.1",
-    "react-redux": "^8.0.5",
-    "@reduxjs/toolkit": "^1.9.2",
-    "@hookform/resolvers": "^2.9.10",
-    "joi": "^17.7.0",
-    "react-router-dom": "^6.8.1",
-    "history": "^5.3.0"
-  },
+  "name": "homeworks_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "typescript": "^4.9.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martari03/React_homeworks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martari03/React_homeworks/issues"
+  },
+  "homepage": "https://github.com/martari03/React_homeworks#readme"
 }
