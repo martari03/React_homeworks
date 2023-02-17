@@ -2,7 +2,11 @@
 
 import {IUser} from "./interfaces/userInterface";
 
-const user: IUser = {name: "Max", age: 18, gender: 'male'}
+const user: IUser = {
+    name: "Max",
+    age: 18,
+    gender: 'male'
+}
 
 function sum(a: number, b: number): number {
     return a + b;
